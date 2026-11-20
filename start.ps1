@@ -8,7 +8,7 @@ Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd frontend; npm.
 
 Write-Host ""
 Write-Host "Services launched successfully:" -ForegroundColor Green
-Write-Host "  - Frontend Web App:  http://localhost:5173" -ForegroundColor White
+Write-Host "  - Frontend Web App:  http://localhost:5173/login" -ForegroundColor White
 Write-Host "  - Backend API:       http://localhost:5000/api/health" -ForegroundColor White
 Write-Host ""
-Start-Process "http://localhost:5173"
+Start-Process "http://localhost:5173/login"

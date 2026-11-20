@@ -73,10 +73,11 @@ export function AuthProvider({ children }) {
         setUser(JSON.parse(savedUser));
       } catch {
         localStorage.removeItem('rea_user');
+        localStorage.removeItem('rea_token');
+        setUser(null);
       }
     } else {
-      // Default initial role for ease of exploration: Super Admin
-      switchRole('super_admin');
+      setUser(null);
     }
     setLoading(false);
   }, []);
