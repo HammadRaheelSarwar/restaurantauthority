@@ -7,6 +7,7 @@ const AuthContext = createContext(null);
 export const PREVIEW_ACCOUNTS = {
   super_admin: {
     id: 'a0000000-0000-0000-0000-000000000001',
+    name: 'Sarah Jenkins',
     full_name: 'Sarah Jenkins',
     email: 'superadmin@rea-compliance.com',
     role: 'super_admin',
@@ -15,6 +16,7 @@ export const PREVIEW_ACCOUNTS = {
   admin: {
     id: 'a0000000-0000-0000-0000-000000000002',
     organization_id: '11111111-1111-1111-1111-111111111111',
+    name: 'Michael Chang',
     full_name: 'Michael Chang',
     email: 'admin@apexhospitality.com',
     role: 'admin',
@@ -23,6 +25,7 @@ export const PREVIEW_ACCOUNTS = {
   restaurant_operator: {
     id: 'a0000000-0000-0000-0000-000000000003',
     organization_id: '11111111-1111-1111-1111-111111111111',
+    name: 'Robert Vance',
     full_name: 'Robert Vance',
     email: 'operator@apexhospitality.com',
     role: 'restaurant_operator',
@@ -31,6 +34,7 @@ export const PREVIEW_ACCOUNTS = {
   restaurant_manager: {
     id: 'a0000000-0000-0000-0000-000000000004',
     organization_id: '11111111-1111-1111-1111-111111111111',
+    name: 'Elena Rostova',
     full_name: 'Elena Rostova',
     email: 'manager@apex-downtown.com',
     role: 'restaurant_manager',
@@ -38,6 +42,7 @@ export const PREVIEW_ACCOUNTS = {
   },
   electrical_assessor: {
     id: 'a0000000-0000-0000-0000-000000000005',
+    name: 'David Martinez, PE',
     full_name: 'David Martinez, PE',
     email: 'assessor@rea-compliance.com',
     role: 'electrical_assessor',
@@ -45,6 +50,7 @@ export const PREVIEW_ACCOUNTS = {
   },
   certification_manager: {
     id: 'a0000000-0000-0000-0000-000000000006',
+    name: 'Rachel Green',
     full_name: 'Rachel Green',
     email: 'certification@rea-compliance.com',
     role: 'certification_manager',
@@ -53,6 +59,7 @@ export const PREVIEW_ACCOUNTS = {
   viewer: {
     id: 'a0000000-0000-0000-0000-000000000007',
     organization_id: '11111111-1111-1111-1111-111111111111',
+    name: 'Thomas Hall',
     full_name: 'Thomas Hall',
     email: 'viewer@apexhospitality.com',
     role: 'viewer',

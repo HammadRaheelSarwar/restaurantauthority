@@ -64,7 +64,7 @@ export default function LoginPage() {
     if (acc) {
       setEmail(acc.email);
       setPassword('password123');
-      addToast(`Filled credentials for ${acc.name} (${acc.role.replace(/_/g, ' ')})`);
+      addToast(`Filled credentials for ${acc.full_name || acc.name} (${acc.role.replace(/_/g, ' ')})`);
     }
   };
 
@@ -201,7 +201,7 @@ export default function LoginPage() {
                       <div className="font-bold text-[11px] text-[#111111] capitalize truncate">
                         {acc.role.replace(/_/g, ' ')}
                       </div>
-                      <div className="text-[10px] text-[#666666] truncate">{acc.name}</div>
+                      <div className="text-[10px] text-[#666666] truncate">{acc.full_name || acc.name}</div>
                     </button>
                   ))}
                 </div>

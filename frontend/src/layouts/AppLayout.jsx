@@ -342,7 +342,7 @@ export default function AppLayout() {
                           <div>
                             <div className="capitalize font-medium">{acc.role.replace(/_/g, ' ')}</div>
                             <span className={`text-[10px] ${user?.role === key ? 'text-white/80' : 'text-[#666666]'}`}>
-                              {acc.name}
+                              {acc.full_name || acc.name}
                             </span>
                           </div>
                           {user?.role === key && <CheckCircle2 className="w-3.5 h-3.5 text-white" />}

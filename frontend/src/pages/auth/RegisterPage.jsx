@@ -84,14 +84,14 @@ export default function RegisterPage() {
     const acc = PREVIEW_ACCOUNTS[rKey];
     if (acc) {
       setFormData({
-        full_name: acc.name,
+        full_name: acc.full_name || acc.name,
         email: acc.email,
         password: 'password123',
         confirm_password: 'password123',
         organization_name: 'Apex Hospitality Group',
         role: acc.role
       });
-      addToast(`Pre-filled registration form with ${acc.name} (${acc.role.replace(/_/g, ' ')})`);
+      addToast(`Pre-filled registration form with ${acc.full_name || acc.name} (${acc.role.replace(/_/g, ' ')})`);
     }
   };
 
@@ -247,7 +247,7 @@ export default function RegisterPage() {
                         <div className="font-bold text-[11px] text-[#111111] capitalize truncate">
                           {acc.role.replace(/_/g, ' ')}
                         </div>
-                        <div className="text-[10px] text-[#666666] truncate">{acc.name}</div>
+                        <div className="text-[10px] text-[#666666] truncate">{acc.full_name || acc.name}</div>
                       </button>
                     ))}
                   </div>
