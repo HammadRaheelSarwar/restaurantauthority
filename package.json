@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-electrical-authority",
+  "version": "1.0.0",
+  "description": "Restaurant Electrical Authority (REA) - Complete Electrical Safety, Readiness & Compliance Management Platform",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start:backend": "npm --prefix backend start",
+    "build:frontend": "npm --prefix frontend run build",
+    "test:backend": "npm --prefix backend test"
+  },
+  "keywords": [
+    "electrical-safety",
+    "compliance",
+    "restaurant-management",
+    "supabase",
+    "express",
+    "react"
+  ],
+  "author": "Restaurant Electrical Authority",
+  "license": "ISC"
+}

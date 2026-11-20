@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* REA Master Black & White Design System Tokens */
+  --color-primary: #111111;
+  --color-primary-dark: #000000;
+  --color-secondary: #FFFFFF;
+  --color-accent: #222222;
+  --color-light: #F0F0F0;
+  --color-bg: #F7F7F7;
+  --color-card: #FFFFFF;
+  --color-text: #111111;
+  --color-muted-text: #666666;
+  --color-border: #E5E5E5;
+  --color-hover: #F0F0F0;
+  --color-muted-bg: #F5F5F5;
+  
+  --color-success: #16834A;
+  --color-warning: #D99A25;
+  --color-danger: #D94848;
+  --color-info: #3984CC;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F1F5F2;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #CBD5CD;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #9AA79F;
+}
+
+/* Decorative security guilloche pattern for certificate verification */
+.certificate-pattern {
+  background-color: #ffffff;
+  background-image: radial-gradient(#146B45 0.5px, transparent 0.5px), radial-gradient(#146B45 0.5px, #ffffff 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* REA Custom Form & Button Focus States */
+.rea-focus {
+  @apply focus:outline-none focus:ring-2 focus:ring-[#146B45] focus:ring-offset-1 focus:border-[#146B45];
+}
