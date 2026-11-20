@@ -8,11 +8,11 @@
     "frontend"
   ],
   "scripts": {
-    "build": "npm --prefix frontend run build",
+    "build": "npm --prefix frontend run build && node -e \"const fs=require('fs');if(fs.existsSync('frontend/dist')&&!fs.existsSync('dist')){fs.cpSync('frontend/dist','dist',{recursive:true})}\"",
+    "build:frontend": "npm --prefix frontend run build && node -e \"const fs=require('fs');if(fs.existsSync('frontend/dist')&&!fs.existsSync('dist')){fs.cpSync('frontend/dist','dist',{recursive:true})}\"",
     "dev:backend": "npm --prefix backend run dev",
     "dev:frontend": "npm --prefix frontend run dev",
     "start:backend": "npm --prefix backend start",
-    "build:frontend": "npm --prefix frontend run build",
     "test:backend": "npm --prefix backend test"
   },
   "keywords": [
